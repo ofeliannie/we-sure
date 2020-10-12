@@ -1,0 +1,132 @@
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE SURE 服務項目</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="./vendor/css/default.css">
+    <link rel="stylesheet" href="./vendor/css/default.date.css">
+    <link rel="stylesheet" href="./vendor/css/default.time.css">
+
+    <link rel="stylesheet" href="./css/reservation.css">
+</head>
+<body>
+    <header class="dropdowns">
+        <a href="./index.html" class="img_logo"><img src="./image/logo.svg" alt="" class="logo"></a>
+        <nav>
+            <ul class="nav_list">
+                <li><a href="service.html"><h4>服務項目</h4></a></li>
+                <li><a href="knowledge.html"><h4>水電大小事</h4></a></li>
+                <li><a href="workplace.html"><h4>工程實況</h4></a></li>
+                <li><a href="contactUs.html"><h4>聯絡我們</h4></a></li>
+            </ul>
+        </nav>
+        <button class="booked_button"><a href="reservation.html">立即預約</a></button> 
+
+        <a href="#" class="header_icons">
+            <img src="./image/member.svg" alt="" class="member">
+        </a>
+        <button class="hamburger hamburger--Spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+    </header>
+    <main>
+        <h2>立即預約</h2>
+        <form enctype="multipart/form-data">
+            <div class="formR">
+                <div>
+                    <label for="name">姓名：</label>
+                    <input type="text" class="name" id="name">
+                </div>
+                <div class="address">
+                    <label for="address" class="address">住址：</label>
+                    <div id="twzipcode"></div>
+                    <input type="text" name="address" >
+                </div>
+                <div>
+                    <label for="tele">電話：</label>
+                    <input type="text" class="tele" id="tele">
+                </div>
+                <div>
+                    <label for="request">需求：</label>
+                    <select name="request" id="request" class="request">
+                        <option value="">請選擇</option>
+                        <option value="">廚房冷熱水、排水配管</option>
+                        <option value="">加壓馬達安裝</option>
+                        <option value="">衛浴設備給水排水冷水管配管</option>
+                        <option value="">馬桶汙水管修改</option>
+                        <option value="">浴室配建安裝：馬桶／面盆／浴缸</option>
+                        <option value="">灑水頭更新</option>
+                        <option value="">燈具開關插座配線</option>
+                        <option value="">插座配線及分切開關出線口處理</option>
+                        <option value="">冷氣安裝</option>
+                        <option value="">冷氣清洗</option>
+                        <option value="">冷氣維修</option>
+                        <option value="">水塔安裝</option>
+                        <option value="">水塔清洗</option>
+                        <option value="">太陽能板安裝</option>
+                        <option value="">太陽能板維修</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="location">施工地點：</label>
+                    <select name="location" id="location">
+                        <option value="">室內</option>
+                        <option value="">室外</option>
+                    </select>
+                </div>
+                <div>
+                    <label>期望到府施工時間：</label>
+                    <input class="datepicker" name="date" type="text" value="" data-value="" placeholder="日期">
+                    <div class="ExD_time">
+                        <input class="timepicker" type="time" name="time" value="" data-value="" placeholder="時間">
+                    </div>
+                
+                </div>
+            </div> 
+            <span></span>  
+            <div class="formL">    
+                <div>
+                    <label for="date">期望完工日期：</label>
+                    <input class="datepicker" name="date" type="text" value="" data-value="">
+                </div>
+                <div>
+                    <label for="file">上傳圖片：</label>
+                    <input type="file" class="file">
+                </div>
+                <div class="comments">
+                    <label for="comments">說明：</label>
+                    <textarea name="comments" id="" cols="35" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="next">
+                <a href="./reservation_p2.html">下一步</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>ＷE SURE水電維修站 TEL: 0955-123456</p>
+        <div class="footer_icons">
+            <a href=""><img src="./image/icon_line.svg" alt=""></a>
+            <a href="#"><img src="./image/icon_facebook.svg" alt=""></a>
+        </div>
+        <p>© Copyright 2020 WE SURE. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./vendor/jquery/picker.js"></script>
+    <script src="./vendor/jquery/picker.date.js"></script>
+    <script src="./vendor/jquery/picker.time.js"></script>
+    <script src="./vendor/jquery/legacy.js"></script>
+    <script src="./vendor/jquery/zh_TW.js"></script>
+    <script src="./vendor/jquery/jquery.twzipcode.min.js"></script>
+    <script src="./js/header.js"></script>
+
+    <script src="./js/reservation.js"></script>
+
+       
+</body>
+</html>
