@@ -1,0 +1,298 @@
+header{
+    /* border: 1px solid salmon; */
+    max-width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    position: sticky;  
+    top: 0;  
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+   
+      
+
+   
+}
+
+
+header > a.img_logo{
+    width: 120px;
+    padding: 0;
+    margin: 3px 10px;
+    /* border: 1px solid #000; */
+}
+
+header > a.img_logo > img{
+    width: 100%;
+}
+
+nav{
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+nav > ul.nav_list{
+    margin: 0;
+    height: 100%;
+    font-size: 0;
+    padding: 0;
+}
+nav > ul.nav_list > li{
+    display: inline-block;
+}
+nav > ul.nav_list > li > a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    
+    
+
+}
+nav > ul.nav_list > li > a:hover{
+    background: linear-gradient(#0066B2, rgba(0, 101, 178, 0.5));
+    color: white;
+    transform: skewX(-15deg);
+    
+}
+
+nav > ul.nav_list > li > a > h4{
+    padding: 28px 35px;
+    height: 100%;
+
+
+}
+nav > ul.nav_list > li > a > h4:hover{
+    transform: skewX(15deg);
+
+}
+
+nav > ul > li > a.-on{
+    text-decoration: none;
+    background: linear-gradient(var(--second-color), rgba(0, 101, 178, 0.5));
+    color: white;
+    transform: skewX(-15deg)
+    
+}
+
+nav > ul > li > a > h4.-on{
+    padding: 28px 35px;
+    transform: skewX(15deg);
+    transition: padding 0.3s linear;
+}
+
+button.booked_button{
+    background-color: #d8322e;
+    border:1px solid transparent;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    box-shadow: -1px -1px 5px 0px darkred inset;
+
+}
+
+
+
+button.booked_button:focus{
+    outline: none;
+}
+
+button.booked_button > a{
+    text-decoration: none;
+    color: white;
+}
+header > a.header_icons{
+    display: inline-block;
+    height: 25px;
+    margin: 0 20px;
+
+}
+
+
+a.header_icons > img.member{
+    height: 100%
+    
+}
+
+
+
+
+/* hamburger */
+header > button.hamburger {
+    display: none;
+    /* border: 1px solid black; */
+    
+}
+
+header > button.hamburger:focus{
+    outline: none;
+}
+  
+
+
+/* rwd */
+@media (max-width:1199px) and (min-width:992px){
+    header{
+        margin: 0;
+        min-width: 960px;
+    }
+    header > a.img_logo{
+        width: 120px;
+    
+    }
+  
+    nav > ul.nav_list > li > a > h4{
+        padding: 28px 30px;
+        
+    }
+    nav > ul > li > a > h4.-on{
+        padding: 28px 30px;
+
+       
+    }
+
+    
+    
+}
+@media (max-width:991px) and (min-width:768px){
+
+    header{
+        margin: 0;
+        min-width: 760px;
+    }
+
+    header > a.img_logo{
+        width: 120px;
+    
+    }
+    nav > ul.nav_list > li > a > h4{
+        padding: 28px 15px;
+        
+
+    }
+    nav > ul > li > a > h4.-on{
+        padding: 28px 15px;
+
+        
+    }
+    
+    
+    header > button.booked_button{
+        padding: 0;
+        width: 86px;
+     }
+     
+
+
+}
+
+@media (max-width:767px){
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    
+    
+    header > a.img_logo{
+        width: 120px;
+    
+    }
+
+    header > button.hamburger{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+   
+    
+    nav{
+        /* border: 1px solid tomato; */
+        width: 100%;
+        height: fit-content;
+    }
+    nav > ul.nav_list{
+        background:rgba(222, 222, 222);
+        height: 0;
+        overflow-y: hidden; 
+        transition: overflow-y 0.5s linear;
+ 
+         
+    }
+
+    nav > ul.show{
+        height: 200px;
+        overflow-y: 100%;
+    }
+
+    nav > ul.nav_list > li{
+        display: block;
+        /* height: 100%; */
+        margin: 15px 0;
+        /* border: 1px solid #000; */
+        
+    }
+    nav > ul.nav_list > li > a{
+        height: fit-content;
+        width: 100%;
+        
+    }
+    
+    nav > ul.nav_list > li > a > h4{
+        padding: 5px 0;
+    }
+    
+    nav > ul.nav_list > li > a:hover{
+        padding: 0;
+        width: 100%;
+        transform: skewX(0deg)   
+    }
+    nav > ul.nav_list > li > a > h4:hover{
+        width: 100%;
+        transform: skewX(0deg);
+    }
+
+    header > nav > ul > li > a.-on{
+        width: 100%;
+        transform: skewX(0deg);     
+    }
+    
+    nav > ul > li > a > h4.-on{
+        transform: skewX(0deg);
+    }
+   
+
+    header > button.booked_button{
+        margin: 0;
+        position: absolute;
+        bottom: 21.25px;
+        right: 110px;
+        padding: 0;
+        width: 86px;
+
+        
+    }
+    
+    
+    header > a.header_icons{
+        position: absolute;
+        bottom: 42.5px;
+        right: 45px;
+        height: 23px;
+        transform: translateY(50%);
+        
+
+
+    }
+        
+
+  
+    
+}
+
+
+

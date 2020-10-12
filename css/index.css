@@ -1,0 +1,536 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/font.css";
+
+/* banner */
+
+div.banner {
+    max-width: 1200px;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.banner>img {
+    width: 100%;
+}
+
+div.banner_text {
+    /* border: 1px solid coral; */
+    background-color: #ffe1d0;
+    border-radius: 30px;
+    width: 30%;
+    height: fit-content;
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    text-align: center;
+}
+
+div.banner_text>h2.slogan {
+    margin: 10px 20px;
+    color: #616161;
+}
+
+div.banner_text>h2.slogan>span::before {
+    content: " ";
+}
+
+div.banner_form {
+    /* border: 1px solid black; */
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+div.banner_form>label {
+    position: absolute;
+    left: 0;
+}
+
+div.banner_form>input {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-top: 8%;
+    width: 100%;
+}
+
+div.banner_text>button.booked_button {
+    background-color: #d8322e;
+    border: darkred;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.8rem;
+    margin: 5% auto;
+    padding: 8px;
+    box-shadow: -1px -1px 5px 0px darkred inset;
+}
+
+div.banner_text>button.booked_button>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 主頁 */
+
+
+/* intro */
+
+main {
+    /* border: 1px solid black; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.intro {
+    line-height: 40px;
+    margin: 80px 0;
+    text-align: center;
+}
+
+div.intro>h1 {
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+}
+
+div.intro>h1.firstLine {
+    left: 3%;
+}
+
+div.intro>h1.secondLine {
+    right: 5%;
+    top: 50px;
+}
+
+div.intro>p {
+    /* border: 1px solid salmon; */
+    display: inline-block;
+    margin: 60px 0;
+}
+
+
+/* repair */
+
+div.repair {
+    /* border: 1px solid darkblue; */
+    text-align: center;
+    height: fit-content;
+    margin: 180px 0;
+    margin-bottom: 280px;
+}
+
+div.repair>h2.repair {
+    /* border: 1px solid blue; */
+    background-color: var(--main-color);
+    width: fit-content;
+    margin: 5% auto;
+    height: 25px;
+}
+
+div.repair>h2.repair>span.repair {
+    /* border: 1px solid red; */
+    display: inline-block;
+    transform: translate(-20px, -15px);
+}
+
+div.step {
+    /* border: 1px solid rgb(182, 178, 178); */
+    display: flex;
+    justify-content: space-around;
+}
+
+div.repair>div>div>h3.repair {
+    color: var(--second-color);
+    margin: 0;
+    margin: 5px 0;
+}
+
+div.repair>div.step>div {
+    /* border: 1px solid salmon; */
+    text-align: center;
+    min-width: 80px;
+}
+
+div.step2,
+div.step4 {
+    transform: translateY(100px);
+}
+
+div.repair>div.step>div>div.stepImage {
+    /* border: 1px solid red; */
+    max-width: 70px;
+    max-height: 70px;
+    display: inline-block;
+}
+
+div.repair>div.step>div>div.stepImage>img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* service */
+
+fieldset.service {
+    text-align: center;
+    border: none;
+    background-color: #92510732;
+    border-radius: 25px;
+    height: 530px;
+    padding: 0;
+    /* margin: 150px 0; */
+    position: relative;
+    margin-bottom: 280px;
+}
+
+fieldset.service>legend {
+    /* border: 1px solid red; */
+    background-color: var(--main-color);
+    height: 25px;
+    width: fit-content;
+}
+
+fieldset.service>legend>h2.service {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    transform: translate(-20px, -40px);
+}
+
+fieldset.service>p.service {
+    margin: 3% 0;
+}
+
+fieldset.service>div.square {
+    max-width: 200px;
+    height: 350px;
+    display: inline-block;
+    transform: skew(-5deg);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+fieldset.service>img.air,
+img.wire,
+img.solar,
+img.plumb {
+    /* border: 1px solid red; */
+    transform: skew(5deg);
+    height: 100%;
+    margin-left: -20px;
+}
+
+fieldset.service>a.more {
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    background-color: rgba(255, 190, 77, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 0px lightgrey;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    width: 65px;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    font-size: 1.6rem;
+}
+
+
+/* service for mobile */
+
+div.service_mb {
+    /* border: 1px solid red; */
+    height: fit-content;
+    display: none;
+    position: relative;
+    padding-bottom: 50px;
+    margin-top: 200px;
+}
+
+div.service_mb>h2.service {
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: 25px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    color: black;
+}
+
+div.service_mb>h2>span {
+    display: inline-block;
+    transform: translate(-20px, -15px);
+}
+
+div.service_mb>a.service {
+    text-decoration: none;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+div.service_mb>a.service>section {
+    /* border: 1px solid salmon; */
+    display: flex;
+    width: 100%;
+    height: 255px;
+    padding: 0 10px;
+}
+
+div.service_mb>a.service>section.wire,
+.plumb {
+    background-color: #92510732;
+}
+
+div.service_mb>a.service>section>div {
+    /* border: 1px solid pink; */
+    width: 50%;
+    height: 250px;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+div.service_mb>a.service>section>div>img {
+    /* border: 1px solid skyblue; */
+    width: 100%;
+}
+
+div.service_mb>a.service>section>h3 {
+    /* border: 1px solid darkgoldenrod; */
+    width: 50%;
+    margin: 0;
+    margin: auto 0;
+    position: relative;
+    top: 50px;
+}
+
+div.service_mb>a.service>section>h3.left {
+    padding-left: 10px;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0.05em 0.05em 0.1em;
+}
+
+div.service_mb>a.service>section>h3.right {
+    text-align: right;
+    padding-right: 10px;
+    color: #925107;
+    text-shadow: rgba(0, 0, 0, 0.09) 0.09em 0.09em 0.01em;
+}
+
+
+/* knowledge */
+
+div.know {
+    /* border: 1px solid darkblue; */
+    max-width: 1200px;
+    height: fit-content;
+    margin: 300px 0 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+div.know>h2.know {
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: 25px;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+}
+
+div.know>h2>span {
+    display: inline-block;
+    transform: translate(-20px, -15px);
+}
+
+div.know>div.article {
+    display: flex;
+}
+
+a.article {
+    width: 100%;
+    text-align: center;
+    border: 5px solid #92510732;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 0.3s;
+}
+
+div.slick-slide {
+    margin: 0px 10px;
+    /* border:1px solid red; */
+    padding: 5px 0;
+}
+
+div.article>button {
+    position: static;
+    margin: auto 0;
+}
+
+.slick-prev::before {
+    color: var(--second-color);
+}
+
+.slick-next::before {
+    color: var(--second-color);
+}
+
+a.article:hover {
+    box-shadow: 1px 1px 10px 0px lightgrey;
+    transform: scale(1.03);
+    transform-origin: center center;
+}
+
+a.article:focus {
+    outline: none;
+}
+
+a.article>div.item {
+    width: 100%;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+a.article>div.item>img {
+    width: 100%;
+}
+
+a.article>div.item>div.know_text>p {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 0 30px;
+    line-height: 30px;
+    /* border: 1px solid black; */
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+div.know>a.more2 {
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    background-color: rgba(255, 190, 77, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 0px lightgrey;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    width: 65px;
+    position: absolute;
+    bottom: -40px;
+    right: 40px;
+    font-size: 1.6rem;
+}
+
+
+/* rwd */
+
+@media (max-width:1199px) and (min-width:992px) {
+    div.banner {
+        width: 100%;
+    }
+    div.banner_text>h2.slogan>span::before {
+        content: "";
+    }
+    div.banner_text>h2.slogan>span {
+        /* display: block; */
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) and (min-width: 768px) {
+    div.banner {
+        width: 100%;
+    }
+    div.banner_text {
+        width: fit-content;
+    }
+    fieldset.service>div.square {
+        max-width: 150px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:767px) {
+    div.banner {
+        width: 100%;
+    }
+    div.banner_text {
+        width: fit-content;
+        bottom: 10%;
+        right: 15%;
+        background-color: hsla(22, 100%, 91%, 0.8)
+    }
+    div.banner_text>h2.slogan {
+        text-shadow: 0.001em 0.001em 0.005em black;
+    }
+    div.banner_text>h2.slogan>label {
+        text-shadow: 0.001em 0.001em 0.005em black;
+    }
+    div.intro {
+        margin-top: 50px;
+        margin-bottom: 0;
+        /* border: 1px solid black; */
+    }
+    div.intro>h1 {
+        position: static;
+        line-height: 60px;
+    }
+    div.intro>h1.secondLine {
+        /* border: 1px solid red; */
+        display: block;
+        margin: 0 auto;
+    }
+    div.intro>p.intro {
+        margin: 40px 10px;
+    }
+    div.intro>p.intro>span {
+        display: block;
+    }
+    div.repair {
+        margin: 100px 0;
+    }
+    div.step {
+        max-width: 500px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    div.step>div {
+        margin: 0 20px;
+    }
+    div.step>div:nth-child(4) {
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+    div.step>div:nth-child(5) {
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    div.step2,
+    div.step4 {
+        transform: translateY(0px);
+    }
+    fieldset.service {
+        display: none;
+    }
+    div.service_mb {
+        display: block;
+    }
+    div.know>a.more2 {
+        display: none;
+    }
+}

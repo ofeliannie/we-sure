@@ -1,0 +1,130 @@
+*{
+    font-family: 微軟正黑體;
+}
+
+:root{
+    --main-color:#FFBC4B;
+    --second-color: #0066B2;
+    --second-buttom-color: #E65102;
+    --second-buttom-border: #E65302;
+}
+
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--second-color);
+    text-shadow: 1px .5px lightgrey;
+    margin: 0;
+    
+}
+h2{
+    font-size: 3rem;
+    
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+h4{
+    font-size: 2rem;
+    margin: 0;
+    
+}
+
+p{
+    font-size: 1.6rem;
+}
+label{
+    font-size: 1.6rem;
+}
+
+li{
+    font-size: 1.6rem;
+}
+
+
+
+
+
+@media (max-width: 991px) and (min-width: 768px){
+    h1{
+        font-size: calc(3.5rem * 0.95);
+    }
+    h2{
+        font-size: calc(3rem * 0.95);
+    }
+
+    h3{
+        font-size: calc(2.5rem * 0.95);
+       
+    }
+    
+    h4{
+        font-size: calc(2rem * 0.95);
+    
+    }
+    
+    p{
+        font-size: calc(1.6rem * 0.95);
+    }
+    li{
+        font-size: calc(1.6rem * 0.95);
+    }
+    label{
+        font-size: calc(1.6rem * 0.95);
+    }
+    button.booked_button{
+        font-size: calc(1.8rem * 0.95);
+    }  
+}
+
+
+
+@media (max-width:767px){
+    h1{
+        font-size: calc(3.5rem * 0.8);
+    }
+    h2{
+        font-size: calc(3rem * 0.8);
+    }
+
+    h3{
+        font-size: calc(2.5rem * 0.8);
+       
+    }
+    
+    h4{
+        font-size: calc(2rem * 0.8);
+    
+    }
+    
+    p{
+        font-size: calc(1.6rem * 0.8);
+    }
+    li{
+        font-size: calc(1.6rem * 0.8);
+    }
+    label{
+        font-size: calc(1.6rem * 0.8);
+    }
+    input, textarea{
+        font-size: 1.6rem;
+    }
+    input::placeholder{
+        font-size: calc(1.6rem * 0.8);
+    }
+    input[type="file"]{
+        font-size: calc(1.6rem * 0.8);
+
+    }
+    
+   
+}
+
+      

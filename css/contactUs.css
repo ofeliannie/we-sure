@@ -1,0 +1,226 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/font.css";
+
+main.contactUs{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+main.contactUs > h2{
+    /* border:1px solid blue; */
+    margin: 50px 0;
+    text-align: center;
+
+}
+
+form.contactUs{
+    /* border: 1px solid goldenrod; */
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+form.contactUs > div.contact_r{
+    /* border: 1px solid blue; */
+    width: fit-content;
+}
+form.contactUs > div.contact_r > div{
+    text-align: left;
+    margin: 30px 0;
+    /* border: 1px solid gold; */
+}
+
+form.contactUs > div.contact_r  > div > label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+form.contactUs > div.contact_r > div > label.name::before{
+    content: "*";
+    color: red;
+    font-size: 10px;
+    vertical-align: top;
+}
+form.contactUs > div.contact_r > div > label.phone::before{
+    content: "*";
+    color: red;
+    font-size: 10px;
+    vertical-align: top;
+}
+form.contactUs > div.contact_r > div > input{
+    width: 200px;
+}
+form.contactUs > div.contact_r > div > input:focus{
+    outline: 1px solid grey;
+
+}
+form.contactUs > div.comments{
+    vertical-align: top;
+    margin: 30px 20px 30px 10px;
+    /* border: 1px solid red; */
+}
+form.contactUs > div.comments > label.comments{
+    vertical-align: top;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+
+}
+form.contactUs > div.comments > label.comments::before{
+    content: "*";
+    color: red;
+    font-size: 10px;
+    vertical-align: top;
+}
+form.contactUs > div.comments > textarea{
+    resize: none;
+    height: 225px;
+    width: 200px;
+    /* border: 1px solid lightgrey; */
+}
+
+form.contactUs > div.comments > textarea:focus{
+    outline: 1px solid grey;
+}
+
+
+form.contactUs > div.submit{
+    /* border: 1px solid salmon; */
+    margin: 30px 0;
+    width: 100%;
+
+}
+form.contactUs > div.submit > input{
+    background: none;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 3px 6px;
+    font-size: 1.6rem;
+    width: 65px;
+    cursor: pointer;
+
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 0px lightgrey;
+
+
+}
+form.contactUs > div.submit > input:focus{
+    outline: none;
+    
+}
+
+
+
+
+
+::placeholder{
+    color: lightgrey;
+    font-size: 10px;
+    font-family: "ado";
+
+}
+
+hr{
+    max-width: 600px;
+}
+
+
+/* location */
+ul.location{
+    /* border: 1px solid red;   */
+    text-align: left;
+}
+ul.location > li.text{
+    /* border: 1px solid pink; */
+    max-width: 400px;
+    margin: 20px auto;
+    list-style: none;
+}
+ul.location > li.text > ul{
+    display: flex;
+
+}
+
+ul.location > li.text:nth-child(3){
+    /* border: 1px solid red; */
+
+    
+}
+ul.location > li > ul > li.social{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    /* border: 1px solid red; */
+    list-style: none;
+}
+
+
+ul.location > li > ul > li.social > img{
+    width: 50px;
+    height: 50px;
+
+
+}
+
+div.map{
+    text-align: center;
+    border: 3px solid lightgrey;
+    margin: 50px auto;
+    width: fit-content;
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+
+
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width:767px){
+
+    form.contactUs > div.contact_r  > div > label{
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    
+    form.contactUs > div.comments{
+        margin: 0;
+        width: 100%;
+    }
+    form.contactUs > div.comments > label.comments{
+        display: block;
+        text-align: left;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        margin-bottom: 5px ;
+        width: 200px;
+
+
+    }
+
+
+    div.map{
+        width: 90%;
+    }
+  
+    
+
+    hr{
+        width: 100%;
+    }
+}

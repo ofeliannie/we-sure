@@ -1,0 +1,437 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/font.css";
+
+
+main{
+    /* border: 1px solid salmon; */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+main > h2{
+    margin: 50px 0;
+}
+
+div.serText_mb{
+    display: none;
+}
+div.service{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center; 
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    background-color: #92510732;
+    overflow: hidden;
+    position: relative;
+   
+    
+    
+    
+}
+div.service > div.imgL_mb{
+    display: none;
+}
+div.service > div.imgL{
+    /* border: 1px solid blue; */
+    height: 400px;
+    overflow: hidden;
+    transform: skew(-10deg,0);
+    position: relative;
+    right: 100px;
+}
+
+
+div.service > div.imgL > img{
+    /* border: 1px solid black; */
+    transform: skew(10deg,0) translate(45px,0);
+    /* width: 100%; */
+    height: 100%;
+    
+}
+
+div.service > div.imgR_mb{
+    display: none;
+}
+div.service > div.imgR{
+    /* border: 1px solid #abc; */
+    height: 400px;
+    overflow: hidden;
+    transform: skew(-10deg,0);
+    position: relative;
+    left: 120px;
+}
+
+
+div.service > div.imgR > img{
+    /* border: 1px solid blue; */
+    transform: skew(10deg,0) translate(-45px,0);
+    height: 100%;
+    
+    
+
+}
+div.service > a.workplace{
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    opacity: 0;            
+
+}
+
+div.service > a.workplace::before{
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+}       
+div.service > a.workplace > div{
+    /* border: 1px solid red; */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3.0rem;
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    background-color: rgba(255, 190, 77, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 0px black;
+    padding: 3px 6px;
+
+}
+
+div.service > a.workplace:hover{
+    opacity: 1;
+
+}
+
+div.service > a.workplace_mb{
+    display: none;
+    text-decoration: none;
+    width: 80%;
+    border: 3px solid var(--second-buttom-color);
+    margin-left: 20%;
+    order: 1;
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    background-color: rgba(255, 190, 77, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+div.service > a.workplace_mb > div{
+    color: black;
+    /* border: 1px solid #000; */
+    padding: 5px 0;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+div.service > a.workplace_mbL{
+    display: none;
+    text-decoration: none;
+    width: 80%;
+    border: 2px solid rgba(230, 83, 2, 0.3);
+    background-color: rgba(255, 190, 77, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 0px lightgrey;
+
+    margin-right: 20%;
+    text-align: right;
+    
+    margin-top: 50px;
+    order: 1;
+}
+
+div.service > a.workplace_mbL > div{
+    color: black;
+    /* border: 1px solid #000; */
+    padding-right: 30px;
+    font-size: 2rem;
+}
+
+div.intro{
+    /* border: 1px solid green; */
+    width: 60%;
+    height: fit-content;
+    margin: auto 0;
+    position: relative;
+   
+    
+}
+
+
+div.right{
+    right: 30px;
+}
+
+div.left{
+    left: 30px;
+}
+
+div.intro > div.ser_text{
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+div.intro > div.ser_text > p{
+    margin-top: 35px;
+    line-height: 30px;
+    text-align: justify;
+
+
+}
+
+div.intro > div.pIcons{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    
+    
+}
+
+div.intro > div.pIcons > div{
+    /* border: 1px solid darkcyan; */
+    display: inline-block;
+    width: 100px;
+    margin: 0 2%;
+    text-align: center;
+    
+    
+}
+div.intro > div.pIcons > div > p{
+    /* border: 1px solid seagreen; */
+    width: 100%;
+    height: 30px;
+    color: var(--second-color);
+    line-height: 30px;
+    margin:0;
+    margin: 10px 0
+}
+
+
+div.intro > div.pIcons > div > div{
+    /* border: 1px solid salmon; */
+    width: 90%;
+    margin: 0 auto;
+}
+div.intro > div.pIcons > div > div > img{
+    width: 100%;
+    /* border: 1px solid slateblue; */
+}
+
+@media (max-width:1200px) and (min-width:992px){
+    div.serText_mb{
+        display: block;
+    }
+    div.intro > div.ser_text > span > h3{
+        display: none;
+
+    }
+    div.intro > div.ser_text > p{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:991px) and (min-width: 768px) {
+    div.serText_mb{
+        display: block;
+    }
+    div.intro > div.ser_text > span > h3{
+        display: none;
+    }
+    div.intro > div.ser_text > p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    div.intro > div.pIcons > div{
+        margin: 0 10%;
+    }
+    div.intro > div.pIcons > div > div{
+        /* border: 1px solid salmon; */
+        width: 70%;
+    }
+ 
+}
+@media (max-width:767px){
+    main > h2{
+        margin-bottom: 50px;
+    }
+    
+    div.serText_mb{
+        display: none;
+    }
+    
+
+
+    div.service{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: white;
+        padding: 0;
+        /* margin-bottom: 130px; */
+        /* border: 1px solid darkgreen; */
+
+    }
+    
+    div.service > div.imgL{
+       display: none;    
+    }
+
+    div.service > div.imgL_mb{
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    div.service > div.imgL_mb > img{
+        width: 100%;
+        
+    }
+    div.service > div.imgL_mb:before{
+        content: '';
+        border-top: 220px solid transparent;
+        border-right:100px solid white;
+        border-left: 100px solid transparent;
+        border-bottom: 220px solid white;
+        position: absolute;
+        right:0;
+    }
+    
+    div.service > div.imgR{
+        display: none;  
+    }
+    
+    div.service > div.imgR_mb{
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden; 
+    }
+    
+    div.service > div.imgR_mb:before{
+        content: '';
+        border-top: 220px solid transparent;
+        border-right:100px solid transparent;
+        border-left: 100px solid white;
+        border-bottom: 220px solid white;
+        position: absolute;
+        left:0;
+        top: 0;
+    }
+    div.service > div.imgR_mb > img{
+        width: 100%;
+    }
+    div.service > a.workplace {
+        display: none;
+    }
+    div.service > a.workplace_mb {
+        display: block;
+    }
+    div.service > a.workplace_mbL {
+        display: block;
+    }
+
+
+    div.left{
+        /* border: 1px solid black; */
+        order: 1;
+    }
+
+    div.intro{
+        /* border: 1px solid rebeccapurple; */
+        width: 100%;
+        position: static;
+    }
+    div.intro > div.ser_text > p{
+        /* border: 1px solid burlywood;; */
+        margin: 35px 20px;
+       
+    }
+
+    div.intro > div.pIcons > div{
+        margin: 5px 10%;
+    }
+    div.intro > div.pIcons > div > p{
+        font-weight: bold;
+        font-size: calc(2rem * 0.8);
+    }
+    div.intro > div.pIcons > div > div{
+        /* border: 1px solid salmon; */
+        width: 70%;
+    }
+    div.intro > div.ser_text{
+        width: 100%;
+        position: relative;
+        border: 1px solid transparent;
+    }
+    
+    div.right > div.ser_text > span{
+        height: 50px;
+        width: 400px;
+        position: absolute;
+        top: -60%;
+        right: 10%;
+        /* border: 1px solid #000; */
+        background-color: var(--main-color);
+        overflow: hidden;
+    }
+    div.intro > div.ser_text > span > h3{
+        margin: 0;
+        margin: 10px;
+    }
+    div.right > div.ser_text > span::before{
+        content: '';
+        border-top: 50px solid transparent;
+        border-right:25px solid white;
+        border-left: 25px solid transparent;
+        border-bottom: 50px solid white;
+        position: absolute;
+        right:0;
+
+        
+    
+    }
+    div.left > div.ser_text > span{
+        height: 50px;
+        width: 400px;
+        position: absolute;
+        top: -60%;
+        left: 10%;
+        /* border: 1px solid #000; */
+        background-color: var(--main-color);
+        overflow: hidden;
+    }
+
+    div.left > div.ser_text > span::before{
+        content: '';
+        border-top: 50px solid transparent;
+        border-right:25px solid transparent;
+        border-left: 25px solid white;
+        border-bottom: 50px solid white;
+        position: absolute;
+        left:0;
+
+        
+    
+    }
+    
+}
+
+
+
+
+
